@@ -1,0 +1,208 @@
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+}
+/*style pour la disposition du menu*/
+header{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5%;
+}
+/*style pour la taille du logo(center)*/
+header .logo{
+    font-size: 25px;
+}
+/*style pour colorer la première lettre de "centre*/
+header .logo span{
+    color:#6371f0;
+}
+
+/*pour (margin) espacer le menu entre eux (text-decor)pour enlever la ligne qui est en-dessous de chaque menu*/
+header .menu a{
+    position: relative;
+    margin:  10px;
+    text-decoration: 0;
+    color:#6090eb;
+    
+}
+/*pour mettre la ligne au dessus de chaque menu et pour determiner la durée de l'animation */
+header .menu a:before {
+    position: absolute;
+    top: -2px;
+    content:"";
+    width:0;
+    height: 2px;
+    background-color: #6371f0;
+    transition: 0.5s;
+}
+header .menu a:hover:before{
+    width: 100%;
+}
+/*pour colorer chaque menu qd on pointe le curseur dessus*/
+header .menu a:hover{
+    color:#b361e9;
+}
+/*style concernant le home*/
+.ari{
+    height:calc(75vh);
+    background-image:url('Une belle infirmière afro-américaine souriante _ Image Premium générée à base d’IA (1).jpg');
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    align-items: center;
+    padding-left: 5%;
+    padding-bottom: 50px;
+}
+.ari-infos {
+    background-color: #fff;
+    border-radius: 9px;
+    padding: 40px;
+    animation:anime 2s linear;
+    }
+.ari-infos p{
+    font-size: 19px;
+}
+/*animation ari-infos*/
+@keyframes anime{
+    from{
+        transform:translateX(-600px);
+    }
+}
+.ari-infos h1{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.ari-infos p{
+    margin-top: 19px;
+    margin-bottom: 19px;
+}
+
+.ri{
+    background-color: whitesmoke;
+    padding: 15px;
+}
+.ZOO{
+    text-align: center;
+    margin: 20px;
+    padding:15px;
+    font-size: 18px;
+    line-height: 1.8;
+    font-style: italic;
+}
+
+.lbz{
+    background-image: url('Empty operating room waiting for surgeons to….jpeg');
+   background-size: cover;
+    background-position: center;
+    display:flex;
+    align-items: center;
+    padding-left: 5%;
+    padding-bottom: 50px;
+}
+.azz{
+    background-color: white;
+    border-radius: 9px;
+    padding: 45px; 
+    margin:100px;
+}
+.azz h2{
+    text-align: center;
+    color:#2c3e50;
+}
+th,td{
+    border:1px solid #aaa;
+    padding:10px;
+}
+footer{
+    text-align: center;
+    padding: 20px;
+}
+
+/* Styles du bouton burger (caché par défaut) */
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #6090eb; /* couleur bleue harmonisée */
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* Responsive : affichage du burger, menu en colonne */
+@media screen and (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 10px 5%;
+    }
+
+    /* Affiche le burger */
+    .burger {
+        display: flex;
+        z-index: 1001; /* au-dessus du menu */
+    }
+
+    /* Cacher le menu par défaut en mobile */
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #f9f9f9; /* fond clair neutre */
+        margin-top: 10px;
+        border-radius: 5px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        padding: 10px 0;
+        position: relative;
+        z-index: 1000;
+    }
+
+    /* Styles des liens du menu */
+    .menu a {
+        padding: 12px 20px;
+        border-bottom: 1px solid #ddd;
+        margin: 0 15px;
+        color: #6090eb;
+        font-weight: 500;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    /* Pas de bordure sur le dernier lien */
+    .menu a:last-child {
+        border-bottom: none;
+    }
+
+    /* Hover menu links */
+    .menu a:hover {
+        background-color: #e6e6ff;
+        color: #4a6bdb;
+    }
+
+    /* Affichage menu quand actif */
+    .menu.active {
+        display: flex;
+    }
+
+    /* Animation bouton burger en croix quand actif */
+    .burger.active div:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .burger.active div:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger.active div:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+}

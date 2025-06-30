@@ -1,0 +1,54 @@
+body{
+    font-family: Arial;
+    background-image:url('b633ecc8-9ba3-47a7-9254-7cbd24c84ba3.jpeg');
+    background-size: cover;
+    background-position:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+form{
+    background-color: rgba(184, 236, 236, 0.753);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px;
+}
+input{
+    display: block;
+    width:100%;
+    margin-bottom: 15px;
+    padding: 6px;
+}
+ button:hover{
+    background-color: #9fa0a1;
+}
+button{
+     padding: 10px;
+     background-color:white;
+     border:none;
+     cursor:pointer;
+     display:block;
+     margin: auto;
+}
+.erreur{
+    color: red;
+    margin-bottom: 10px;
+}
+h2{
+    text-align: center;
+}
+
+/* Responsive mobile */
+@media screen and (max-width: 480px) {
+    form {
+        padding: 20px 15px;
+        max-width: 100%;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    button {
+        font-size: 16px;
+    }
+}

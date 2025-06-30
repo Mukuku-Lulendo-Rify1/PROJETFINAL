@@ -1,0 +1,86 @@
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+}
+/*style pour la disposition du menu*/
+header{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5%;
+}
+/*style pour la taille du logo(center)*/
+header .logo{
+    font-size: 25px;
+}
+/*style pour colorer la première lettre de "centre*/
+header .logo span{
+    color:#6371f0;
+}
+
+/*pour (margin) espacer le menu entre eux (text-decor)pour enlever la ligne qui est en-dessous de chaque menu*/
+header .menu a{
+    position: relative;
+    margin: 0 10px;
+    text-decoration: 0;
+    color:#6090eb;
+    
+}
+/*pour mettre la ligne au dessus de chaque menu et pour determiner la durée de l'animation */
+header .menu a:before {
+    position: absolute;
+    top: -2px;
+    content:"";
+    width:0;
+    height: 2px;
+    background-color: #6371f0;
+    transition: 0.5s;
+}
+header .menu a:hover:before{
+    width: 100%;
+}
+/*pour colorer chaque menu qd on pointe le curseur dessus*/
+header .menu a:hover{
+    color:#b361e9;
+}
+.specialistes{
+    text-align: center;
+    margin:15px;
+    padding: 20px;
+    background-image: url('b633ecc8-9ba3-47a7-9254-7cbd24c84ba3.jpeg');
+    background-size: cover;
+}
+.specialistes h2{
+    margin:15px;
+    padding:15px;
+}
+.spe{
+    display: inline-block;
+    margin:20px;
+    padding: 10px;
+    background-color: rgba(238, 238, 255, 0.753);
+    border-radius: 8px;
+     margin-left: 59px;
+}
+.spe img{
+    border-radius: 50%;
+    margin-bottom: 10px;
+   
+}
+.spe h3{
+    color:#005a9c;
+    margin:10px ;
+}
+.spe p{
+    font-size: 0.9em;
+}
+footer{
+    text-align: center;
+    padding: 15px;
+    background-color: #222;
+    color:#eee;
+}

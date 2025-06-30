@@ -1,0 +1,122 @@
+   :root {
+        --primary-color: #007BFF;
+        --danger-color: #dc3545;
+        --bg-color: #f8f9fa;
+        --text-color: #343a40;
+        --white: #ffffff;
+        --border-radius: 8px;
+        --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 40px;
+        background-color: var(--bg-color);
+        color: var(--text-color);
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    h1 {
+        margin: 0;
+        font-size: 28px;
+        font-weight: 600;
+        color: var(--text-color);
+    }
+
+    header a {
+        text-decoration: none;
+        padding: 8px 14px;
+        background-color: var(--primary-color);
+        color: var(--white);
+        border-radius: var(--border-radius);
+        font-size: 14px;
+        transition: background-color 0.2s ease;
+    }
+
+    header a:hover {
+        background-color: #0056b3;
+    }
+
+    .container {
+        background: var(--white);
+        padding: 30px;
+        border-radius: var(--border-radius);
+        box-shadow: var(--shadow);
+    }
+
+    form {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 25px;
+    }
+
+    form input[type="text"] {
+        flex: 1;
+        padding: 10px 14px;
+        border-radius: var(--border-radius);
+        border: 1px solid #ced4da;
+        font-size: 14px;
+    }
+
+    form button {
+        padding: 10px 20px;
+        background-color: var(--primary-color);
+        color: var(--white);
+        border: none;
+        border-radius: var(--border-radius);
+        font-weight: 500;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+    }
+
+    form button:hover {
+        background-color: #0056b3;
+    }
+
+    form a {
+        font-size: 14px;
+        color: var(--danger-color);
+        text-decoration: underline;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 15px;
+    }
+
+    th, td {
+        padding: 14px 12px;
+        text-align: left;
+        border-bottom: 1px solid #dee2e6;
+    }
+
+    th {
+        background-color: #f1f3f5;
+        color: #495057;
+        font-weight: 600;
+    }
+
+    tr:hover {
+        background-color: #f9fafb;
+    }
+
+    .btn-delete {
+        color: var(--danger-color);
+        font-weight: 500;
+        text-decoration: none;
+        transition: color 0.2s ease;
+    }
+
+    .btn-delete:hover {
+        color: #a71d2a;
+        text-decoration: underline;
+    }

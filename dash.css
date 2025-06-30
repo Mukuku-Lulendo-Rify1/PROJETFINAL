@@ -1,0 +1,418 @@
+/* Reset & base */
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f8fa;
+    margin: 0;
+    color: #333;
+}
+
+/* Header */
+.header {
+    background-color: #007BFF;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 12px rgb(0 123 255 / 0.3);
+}
+.header h1 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+.logout-btn {
+    background: #dc3545;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+.logout-btn:hover {
+    background-color: #b02a37;
+}
+
+/* Container principal */
+.container {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Statistiques globales */
+.stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+.card {
+    background: white;
+    padding: 1.5rem 1rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgb(0 0 0 / 0.07);
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #007BFF;
+}
+.card h2 {
+    margin: 0 0 0.5rem 0;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+.card p {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* Graphique */
+section.graph {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
+    margin-bottom: 2rem;
+}
+section.graph h2 {
+    margin-bottom: 1rem;
+    font-weight: 700;
+    color: #007BFF;
+}
+
+/* Gestion boutons */
+.gestion {
+    margin-bottom: 2rem;
+}
+.buttons {
+    display: flex;
+    gap: 1rem;
+}
+.btn {
+    flex-grow: 1;
+    padding: 0.8rem 0;
+    background: #007BFF;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 600;
+    box-shadow: 0 3px 8px rgb(0 123 255 / 0.3);
+    transition: background-color 0.3s ease;
+}
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Tables rendez-vous */
+.rdv-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+.rdv-table thead {
+    background-color: #007BFF;
+    color: white;
+}
+.rdv-table th, .rdv-table td {
+    padding: 0.8rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+.rdv-table tbody tr:hover {
+    background-color: #f1faff;
+}
+
+/* Boutons dans tables */
+.rdv-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+.btn-success {
+    background-color: #28a745;
+    border: none;
+    color: white;
+    padding: 0.4rem 0.7rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.btn-success:hover {
+    background-color: #1e7e34;
+}
+.btn-danger {
+    background-color: #dc3545;
+    border: none;
+    color: white;
+    padding: 0.4rem 0.7rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.btn-danger:hover {
+    background-color: #b02a37;
+}
+.btn-warning {
+    background-color: #ffc107;
+    border: none;
+    color: #212529;
+    padding: 0.4rem 0.7rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.btn-warning:hover {
+    background-color: #e0a800;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #007BFF;
+    color: white;
+    font-weight: 600;
+    margin-top: 3rem;
+    box-shadow: 0 -4px 12px rgb(0 123 255 / 0.3);
+}
+
+
+/* Reset de base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header */
+.header {
+  background-color: #007BFF;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header h1 {
+  font-size: 1.5rem;
+}
+
+.logout-btn {
+  background-color: white;
+  color: #007BFF;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.container {
+  padding: 1rem 2rem;
+}
+
+/* Statistiques */
+.stats {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.card {
+  flex: 1 1 30%;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.card h2 {
+  margin-bottom: 0.5rem;
+  color: #007BFF;
+}
+
+/* Graphique */
+.graph {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.graph h2 {
+  margin-bottom: 1rem;
+  color: #007BFF;
+}
+
+/* Boutons de gestion */
+.gestion {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  background-color: #007BFF;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Table rendez-vous */
+.rdv-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.rdv-table th,
+.rdv-table td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+
+.rdv-table th {
+  background-color: #f0f8ff;
+  color: #007BFF;
+}
+
+.rdv-actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.btn-success {
+  background-color: #28a745;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}
+
+.btn-warning {
+  background-color: #ffc107;
+  color: black;
+}
+
+.btn-warning:hover {
+  background-color: #e0a800;
+}
+
+/* Sections */
+section {
+  margin-bottom: 3rem;
+}
+
+section h1, section h2 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #007BFF;
+  color: white;
+  margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .stats {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+
+  .rdv-actions {
+    flex-direction: column;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .header h1 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  body {
+    font-size: 0.95rem;
+  }
+
+  .btn, .logout-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .rdv-table th, .rdv-table td {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+
+  .graph canvas {
+    width: 100% !important;
+    height: auto !important;
+  }
+}
